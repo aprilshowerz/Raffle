@@ -1,3 +1,12 @@
+# defines a function called Pick_a_winner
+def pick_a_winner
+	num = 1001
+	array = []
+	array.include?(num)
+  	end
+end
+
+pick_a_winner
 
 # defines a function called tickets_pulled that determines how many tickets
 # a user wants and tells them what their tickets numbers are.
@@ -40,6 +49,17 @@ end
 
 
 
+
+
+
+# #sets array pulled_tickets equal to variable winning_numbers
+# 	pulled_tickets = [winning_numbers]
+# end
+# puts pick_a_winner
+
+
+
+
 #defines a function called one_off that takes two numbers as strings and compares them.
 def one_off
 
@@ -55,4 +75,5 @@ def one_off
 	# sets user input to variable num2
 	num2 = gets.chomp
 
+end
 end
