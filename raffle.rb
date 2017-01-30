@@ -3,8 +3,8 @@
 # a user wants and tells them what their tickets numbers are.
 def tickets_pulled
 
-#prompts the user for a number.
-puts "How many tickets would you like to buy?"
+	#prompts the user for a number.
+	puts "How many tickets would you like to buy?"
 
 #sets a variable to the user input and parses it to an integer.
 tickets_bought = gets.chomp.to_i
@@ -18,7 +18,10 @@ end
 #displays the numbers assigned to the pulled tickets to the user.
 puts "your ticket numbers are: #{tickets_pulled}"
 
-# defines a function that takes an array of numbers and 
+
+
+# defines a function that takes an array of numbers and displays 
+#the winning numbers to the user.
 def winning_numbers
 
 	#prompts the user for a number.
@@ -31,13 +34,11 @@ def winning_numbers
 	#The length of this array is equal to the number the user inputed 
 	#by passing that variable into the Array paramenters.
 	Array.new(drawings) { rand 1000..2000}
-
-	# displays the winning numbers to the user.
-	puts "Todays winning numbers are: #{winning_numbers}"
 end
+	# displays the winning numbers to the user.
+	puts "The winning numbers from those drawings are: #{winning_numbers}"
 
-# calls the functions winning_numbers
-puts winning_numbers
+
 
 #defines a function called one_off that takes two numbers as strings and compares them.
 def one_off
